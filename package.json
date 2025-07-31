@@ -35,7 +35,7 @@
   },
   "scripts": {
     "build": "tsc -b && vite build",
-    "build:github": "tsc -b && vite build --config vite.config.github.ts",
+    "build:github": "tsc -p tsconfig.github.json && vite build --config vite.config.github.ts",
     "cf-typegen": "wrangler types",
     "check": "tsc && vite build && wrangler deploy --dry-run",
     "dev": "vite",
