@@ -26,5 +26,12 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src/react-app", "src/shared"]
+  "include": ["src/react-app", "src/shared"],
+  "exclude": [
+    "src/worker/**/*",
+    "worker-configuration.d.ts",
+    "wrangler.jsonc",
+    "tsconfig.worker.json",
+    "vite.config.ts"
+  ]
 }
