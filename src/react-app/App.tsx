@@ -1,9 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "@/react-app/pages/Home";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/puzzle-generator">
       <Routes>
         <Route path="/" element={<HomePage />} />
       </Routes>
